@@ -38,6 +38,28 @@ h3 {
   color: white;
 }
 
+.group img {
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 75px;
+  margin: 25px;
+}
+
+.item {
+  margin: 20px;
+  flex: 1;
+}
+
+.item-double {
+  margin: 20px;
+  flex: 2;
+}
+
 .btn {
   display: inline-block;
   text-decoration: none;
@@ -71,14 +93,12 @@ hr {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 75%;
 }
 
 .picture-center {
-  display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 375px;
 }
 
 /* This is for centering the whole page, and condensing the information to the middle, so that its easier to read, and better on the eyes. */
@@ -101,3 +121,9 @@ a:hover   { color: darkblue; }
 a:active  { color: red;  }
 
 /* These are my styled links. I made some changes to the colors in the way that makes sense to me. */
+
+@media all and (min-width:800px) {
+  .group {
+    flex-direction: row;
+  }
+}
